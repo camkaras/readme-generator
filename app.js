@@ -7,7 +7,6 @@ README.MD GENERATOR
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generatePage = require('./src/template');
-
 // TODO: Create an array of questions for user input
 const questions = () => {
     return inquirer.prompt([
@@ -45,7 +44,7 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'IntsallationInstructions',
+            name: 'InstallationInstructions',
             message: 'Enter the Installation Instructions:'
         },
         {
@@ -107,9 +106,20 @@ const questions = () => {
 
 
 // TODO: Create a function to write README file
-questions().then(answers => console.log(answers));
+questions()
+.then(answers => {
+    return generatePage(answers);
+})
+.then(function(data){
+    fs.writeFile('./README.md', data, err => {
+        if (err) throw new Error(err);
 
-fs.writeFile('./README.md', answers, err => {
-    if (err) throw err;
-    console.log('Portfolio complete! Check out index.html to see the output!');
-});
+        console.log('File created! Check out README.md in this directory to see it!');
+    });
+})
+
+//questions get answered
+//answers get put into template
+//put into readme
+
+//console.log(generatePage())

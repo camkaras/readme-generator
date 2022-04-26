@@ -1,40 +1,57 @@
-module.exports = pageTemp => {
+module.exports = tempAns => { console.log(tempAns)
     return `
-        ${ProjectName} 
+        
+    
+    
+    ${tempAns.ProjectName} 
 
-        Project Description: ${Description}
+        Project Description: ${tempAns.Description}
 
+        
         --Table of Contents-- 
         * Installation Instructions
         * Test Instructions
         * Usage Information
         * Contribution Guidelines
     
-        Installation Instructions: ${InstallationInstructions}
+        
+        
+        
+        Installation Instructions: ${tempAns.InstallationInstructions}
 
-        Test Instructions: ${TestInstructions}
+        Test Instructions: ${tempAns.TestInstructions}
 
-        Usage Information: ${UsageInformation}
+        Usage Information: ${tempAns.UsageInformation}
 
-        Contribution Guidelines: ${ContributionGuidelines}
+        Contribution Guidelines: ${tempAns.ContributionGuidelines}
 
+    
+    
+    
         --Images--
 
 
 
+        
         --Link to Github Repository--
-        ${GithubRepository}
+        ${tempAns.GithubRepository}
 
         --Link to Deployed Application--
-        ${DeployedApplication}
+        ${tempAns.DeployedApplication}
 
         
+       
+       
         --Author Information--
-        * ${Name}
-        * ${Github}
-        * ${Email}
+        * ${tempAns.Name}
+        * ${tempAns.Github}
+        * ${tempAns.Email}
 
+        
+        
+        
         --License--
-        ${License}
+        ${tempAns.License}
     `;
 };
+
