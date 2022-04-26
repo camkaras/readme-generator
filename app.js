@@ -1,4 +1,8 @@
-
+console.log(`
+===================
+README.MD GENERATOR
+===================
+`);
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
@@ -24,8 +28,14 @@ const questions = () => {
             message: 'Enter your Email Address:'
         },
         {
+            type: 'confirm',
+            name: 'feature',
+            message: 'Please confirm personal information is correct',
+            default: false
+        },
+        {
             type: 'input',
-            name: 'Project Name',
+            name: 'ProjectName',
             message: 'What is the name of your project:'
         },
         {
@@ -35,22 +45,22 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'Intsallation Instructions',
+            name: 'IntsallationInstructions',
             message: 'Enter the Installation Instructions:'
         },
         {
             type: 'input',
-            name: 'Test Instructions',
+            name: 'TestInstructions',
             message: 'Enter the Test Instructions:'
         },
         {
             type: 'input',
-            name: 'Usage Information',
+            name: 'UsageInformation',
             message: 'Enter Usage Information'
         },
         {
             type: 'input',
-            name: 'Contribution Guidelines',
+            name: 'ContributionGuidelines',
             message: 'Enter the Contribution Guidelines:'
         },
         {
@@ -61,13 +71,35 @@ const questions = () => {
         },
         {
             type: 'link',
-            name: 'Github Repository',
-            message: 'Enter the link to Github Repository:'
+            name: 'GithubRepository',
+            message: 'Enter the link to Github Repository:',
+            validate: linkInput => {
+                if (linkInput) {
+                    return true;
+                } else {
+                    console.log('You need to enter a GitHub link!');
+                    return false;
+                }
+            }
         },
         {
             type: 'link',
-            name: 'Deployed Application',
-            message: 'Enter the link to Deployed Application'
+            name: 'DeployedApplication',
+            message: 'Enter the link to Deployed Application',
+            validate: linkInput => {
+                if (linkInput) {
+                    return true;
+                } else {
+                    console.log('You need to enter a link to Deployed App!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'confirm',
+            name: 'feature',
+            message: 'Please confirm project information is correct',
+            default: false
         },
         
     ]);
@@ -76,3 +108,8 @@ const questions = () => {
 
 // TODO: Create a function to write README file
 questions().then(answers => console.log(answers));
+
+fs.writeFile('./README.md', answers, err => {
+    if (err) throw err;
+    console.log('Portfolio complete! Check out index.html to see the output!');
+});
