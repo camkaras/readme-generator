@@ -1,38 +1,54 @@
 
-        affgbafgbabjbagj 
+        
+    
+    
+    README Generator 
 
-        Project Description: abagboubagobougabouga
+        Project Description: In this challenge i am using the inquirer package to create a professional README.md generator, that runs via the terminal.
 
+        
         --Table of Contents-- 
         * Installation Instructions
         * Test Instructions
         * Usage Information
         * Contribution Guidelines
     
-        Installation Instructions: undefined
+        
+        
+        
+        Installation Instructions: n/a
 
-        Test Instructions: abgoubguoabouag
+        Test Instructions:  n/a
 
-        Usage Information: aiheuobuogbg
+        Usage Information: In order to use this code you must clone the code and run the command "node app.js". Next fill out the questions and you give recieve a confirmation message stating  a README.md file has been created in the file directory.
 
-        Contribution Guidelines: eabauoegueageageaugbea
+        Contribution Guidelines: 
 
-        --Images--
+    
+    
+    
+        
 
 
-
-        --Link to Github Repository--
-        ghghghghg
-
-        --Link to Deployed Application--
-        ghghghghhg
 
         
-        --Author Information--
-        * cam
-        * camkaras
-        * ffgsabvgasdguagag
+        --Link to Github Repository--
+        https://github.com/camkaras/readme-generator/tree/main
 
+        --Link to Deployed Application--
+        kk
+
+        
+       
+       
+        --Author Information--
+        * Cameron Karasiuk
+        * camkaras
+        * cameron.karasiuk@gmail.com
+
+        
+        
+        
         --License--
-        Apache,Boost,BSD,Creative Commons,Eclipse,GNU,IBM
+        Apache
     
