@@ -20,7 +20,7 @@
 
         Test Instructions:  n/a
 
-        Usage Information: In order to use this code you must clone the code and run the command "node app.js". Next fill out the questions and you give recieve a confirmation message stating  a README.md file has been created in the file directory.
+        Usage Information: In order to use this code you must clone the code and run the command "node app.js". Next fill out the questions and you give recieve a             confirmation message stating  a README.md file has been created in the file directory.
 
         Contribution Guidelines: 
 
@@ -36,7 +36,7 @@
         https://github.com/camkaras/readme-generator/tree/main
 
         --Link to Deployed Application--
-        kk
+        https://youtu.be/j87KewawdDA
 
         
        
