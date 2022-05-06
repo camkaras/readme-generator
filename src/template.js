@@ -1,57 +1,49 @@
+
 module.exports = tempAns => { console.log(tempAns)
     return `
-        
-    
-    
-    ${tempAns.ProjectName} 
 
-        Project Description: ${tempAns.Description}
+${tempAns.ProjectName} 
 
-        
-        --Table of Contents-- 
-        * Installation Instructions
-        * Test Instructions
-        * Usage Information
-        * Contribution Guidelines
-    
-        
-        
-        
-        Installation Instructions: ${tempAns.InstallationInstructions}
+Project Description: ${tempAns.Description}
 
-        Test Instructions: ${tempAns.TestInstructions}
 
-        Usage Information: ${tempAns.UsageInformation}
-
-        Contribution Guidelines: ${tempAns.ContributionGuidelines}
-
-    
-    
-    
-        --Images--
+--Table of Contents-- 
+* Installation Instructions
+* Test Instructions
+* Usage Information
+* Contribution Guidelines
 
 
 
-        
-        --Link to Github Repository--
-        ${tempAns.GithubRepository}
 
-        --Link to Deployed Application--
-        ${tempAns.DeployedApplication}
+Installation Instructions: ${tempAns.InstallationInstructions}
 
-        
-       
-       
-        --Author Information--
-        * ${tempAns.Name}
-        * ${tempAns.Github}
-        * ${tempAns.Email}
+Test Instructions: ${tempAns.TestInstructions}
 
-        
-        
-        
-        --License--
-        ${tempAns.License}
+Usage Information: ${tempAns.UsageInformation}
+
+Contribution Guidelines: ${tempAns.ContributionGuidelines}
+
+
+--Link to Github Repository--
+${tempAns.GithubRepository}
+
+--Alternative Links--
+${tempAns.DeployedApplication}
+
+
+
+
+--Author Information--
+* ${tempAns.Name}
+* ${tempAns.Github}
+* ${tempAns.Email}
+
+
+
+
+--License--
+${tempAns.license}
+
     `;
-};
-
+}

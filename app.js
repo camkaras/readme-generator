@@ -63,10 +63,10 @@ const questions = () => {
             message: 'Enter the Contribution Guidelines:'
         },
         {
-            type: 'checkbox',
-            name: 'License',
-            message: 'Select License (Check)',
-            choices: ['Apache', 'Boost', 'BSD', 'Creative Commons', 'Eclipse', 'GNU', 'IBM']
+            type: 'list',
+            name: 'license',
+            message: 'Select License',
+            choices: ['Apache 2.0', 'MIT','GNUAGPLv3', 'GNUGPLv3','GNULGPLv3', 'BoostSoftwareLicense1.0'],
         },
         {
             type: 'link',
